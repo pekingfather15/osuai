@@ -1,0 +1,126 @@
+{
+  "description": "Held-out val replays, one per map; paths are relative to the data folder.",
+  "created": "2026-10-07T09:35:33",
+  "replays": [
+    {
+      "map": "osu3k/maps/1006742/Odyssey Eurobeat - Native Faith (Eurobeat Mix) (Val) [initial faith (wow great one val)].osu",
+      "replay": "replays-osu3k/4123740.osr"
+    },
+    {
+      "map": "osu3k/maps/1151004/UNDEAD CORPORATION - Embraced by the Flame (Yumerios) [Extra].osu",
+      "replay": "replays-osu3k/4126190.osr"
+    },
+    {
+      "map": "osu3k/maps/1365438/goreshit - Fake Ass Bitches (-Ploy-) [Extra!!].osu",
+      "replay": "replays-osu3k/4123861.osr"
+    },
+    {
+      "map": "osu3k/maps/1638057/Yorushika - Semi-Transparent Boy (Ratarok) [Illusory].osu",
+      "replay": "replays-osu3k/4125775.osr"
+    },
+    {
+      "map": "osu3k/maps/1834293/Eagle - Hypersonik (Ascended) [zhuxiaoyan's Ultra].osu",
+      "replay": "replays-osu3k/4124090.osr"
+    },
+    {
+      "map": "osu3k/maps/1905695/kessoku band - Ano Band (TV Size) (Mahiru Shiina) [Expert Band].osu",
+      "replay": "replays-osu3k/4124409.osr"
+    },
+    {
+      "map": "osu3k/maps/2222636/Monetochka - Kazhdyy Raz (Cut Ver.) (Seni) [empty pockets and a single thought].osu",
+      "replay": "replays-osu3k/4126121.osr"
+    },
+    {
+      "map": "osu3k/maps/2287284/Phoneboy - Nevermind (feat. Justin Magnaye) (Nightcore Mix) (-aly) [Mekadon's Extreme].osu",
+      "replay": "replays-osu3k/4123975.osr"
+    },
+    {
+      "map": "osu3k/maps/2295884/Porcelain Black - Pretty Little Psycho (Nightcore & Cut Ver.) (Fufla) [Insane].osu",
+      "replay": "replays-osu3k/4124108.osr"
+    },
+    {
+      "map": "osu3k/maps/2464479/Michael Sembello - Maniac (Nightcore & Cut Ver.) (Sotarks) [Obsession].osu",
+      "replay": "replays-osu3k/4126996.osr"
+    },
+    {
+      "map": "osu3k/maps/2476009/Grant Kirkhope - Turbo Trainers (NaPiii_) [Turbo!].osu",
+      "replay": "replays-osu3k/4125806.osr"
+    },
+    {
+      "map": "osu3k/maps/363882/PLight - YELLOW SPLASH!! (Minakami Yuki) [Special Splash!!].osu",
+      "replay": "replays-osu3k/4127262.osr"
+    },
+    {
+      "map": "osu3k/maps/41686/Lily - Scarlet Rose (val0108) [0108 style].osu",
+      "replay": "replays-osu3k/4125390.osr"
+    },
+    {
+      "map": "osu3k/maps/435693/THE ORAL CIGARETTES - Kyouran Hey Kids!! (Sped Up Ver.) (D e s) [MeMoRiA].osu",
+      "replay": "replays-osu3k/4126090.osr"
+    },
+    {
+      "map": "osu3k/maps/55799/PSY - GANGNAM STYLE (yeahyeahyeahhh) [OPPAN YEAH30 STYLE].osu",
+      "replay": "replays-osu3k/4124152.osr"
+    },
+    {
+      "map": "osu3k/maps/684916/Aqours - MY MaiTONIGHT (My Angel Kanan) [sdafsf's Odore].osu",
+      "replay": "replays-osu3k/4126360.osr"
+    },
+    {
+      "map": "osu3k/maps/718825/Luschka - Kami no Kotoba (Shifu Touka) [I rewind it towards days that will not change.].osu",
+      "replay": "replays-osu3k/4125046.osr"
+    },
+    {
+      "map": "songs/115193 sakuzyo - AXION/sakuzyo - AXION (Flower) [HW's EX].osu",
+      "replay": "replays-7562902/4207349987.osr"
+    },
+    {
+      "map": "songs/1483235 Hoshimachi Suisei - Ranbu no Melody (Cut Ver.)/Hoshimachi Suisei - Ranbu no Melody (Cut Ver.) (Aerous) [Mugetsu].osu",
+      "replay": "replays-7562902/1798248037.osr"
+    },
+    {
+      "map": "songs/1923289 Imperial Circus Dead Decadence - Jashin no Konrei, Gi wa Ai to Shiru/Imperial Circus Dead Decadence - Jashin no Konrei, Gi wa Ai to Shiru. (ItsWinter) [Zetsubou no Hana].osu",
+      "replay": "replays-7562902/7254767303.osr"
+    },
+    {
+      "map": "songs/2269519 piri & tommy - on & on/piri & tommy - on & on (mqno) [-Tynamo's extra].osu",
+      "replay": "replays-10549880/5101796175.osr"
+    },
+    {
+      "map": "songs/2375676 25-ji, Nightcord de. x KAITO - Heat abnormal/25-ji, Nightcord de. x KAITO - Heat abnormal (Dailycare) [Another].osu",
+      "replay": "replays-7562902/5164068870.osr"
+    },
+    {
+      "map": "songs/374364 Frederic Francois Chopin - op 10 no 2 (8-bit remix)/Frederic Francois Chopin - op 10 no 2 (8-bit remix) (Louis Cyphre) [Etude].osu",
+      "replay": "replays-10549880/4756745276.osr"
+    },
+    {
+      "map": "songs/384263 Camellia - LET'S JUMP/Camellia - LET'S JUMP (RikiH_) [Year 2316].osu",
+      "replay": "replays-7562902/6405616958.osr"
+    },
+    {
+      "map": "songs/392215 IOSYS - Cirno no Perfect Sansuu Kyoushitsu/IOSYS - Cirno no Perfect Sansuu Kyoushitsu (alacat) [Muya's Lunatic].osu",
+      "replay": "replays-10549880/3714227495.osr"
+    },
+    {
+      "map": "songs/416426 Adventure Club - Fade (feat. Zak Waters)/Adventure Club - Fade (feat. Zak Waters) (Come[Back]Home) [Lost].osu",
+      "replay": "replays-7562902/6169727030.osr"
+    },
+    {
+      "map": "songs/550035 Machico - TOMORROW/Machico - TOMORROW (Little) [Future].osu",
+      "replay": "replays-7562902/2254419619.osr"
+    },
+    {
+      "map": "songs/691220 DJ TOTTO - Crystalia/DJ TOTTO - Crystalia (Hysteria) [Meal's Ultra].osu",
+      "replay": "replays-7562902/6108359037.osr"
+    },
+    {
+      "map": "songs/911995 Marie - Clover Day'/Marie - Clover Day's (Rage Quit) [Rio's Extra].osu",
+      "replay": "replays-7562902/1596365363.osr"
+    },
+    {
+      "map": "songs/975301 TWICE - CHILLAX/TWICE - CHILLAX (DeRandom Otaku) [SHINING WAVE].osu",
+      "replay": "replays-7562902/3328087822.osr"
+    }
+  ]
+}

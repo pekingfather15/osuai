@@ -1,0 +1,206 @@
+{
+  "description": "Held-out test replays, one per map; paths are relative to the data folder.",
+  "created": "2026-10-07T03:31:41",
+  "replays": [
+    {
+      "map": "songs/1006690 TWICE - HAPPY HAPPY/TWICE - HAPPY HAPPY (Sotarks) [YOU YOU YOU!].osu",
+      "replay": "replays-7562902/3328109693.osr"
+    },
+    {
+      "map": "songs/1049899 Krewella - Say Goodbye (Nightcore & Cut Ver.)/Krewella - Say Goodbye (Nightcore & Cut Ver.) (A r M i N) [Broken Promises].osu",
+      "replay": "replays-7562902/3459553058.osr"
+    },
+    {
+      "map": "songs/1133480 O2i3 - Heart Function/O2i3 - Heart Function (VINXIS) [vikala's Insane].osu",
+      "replay": "replays-10549880/5859817969.osr"
+    },
+    {
+      "map": "songs/1321314 syatten remixed celas - Bird Sprite -Awakening of Light-/syatten remixed celas - Bird Sprite -Awakening of Light- (emu1337) [Extreme].osu",
+      "replay": "replays-10549880/4291805688.osr"
+    },
+    {
+      "map": "songs/1348020 ovEnola - Noose (Cut Ver.)/ovEnola - Noose (Cut Ver.) (BOUYAAA) [Death].osu",
+      "replay": "replays-7562902/2665980452.osr"
+    },
+    {
+      "map": "songs/1468542 DRAGON EYES - Twilight Symphony/DRAGON EYES - Twilight Symphony (Mildly Accurate) [Crescendo of the Night].osu",
+      "replay": "replays-10549880/4729539614.osr"
+    },
+    {
+      "map": "songs/1484419 Masked Wolf - Astronaut In The Ocean/Masked Wolf - Astronaut In The Ocean (Fursum) [Sheesh].osu",
+      "replay": "replays-7562902/3401380332.osr"
+    },
+    {
+      "map": "songs/1522116 Metrik - We Got It (feat. Rothwell)/Metrik - We Got It (feat. Rothwell) (evth) [Watch The World].osu",
+      "replay": "replays-10549880/1807984093.osr"
+    },
+    {
+      "map": "songs/166062 Lime - Renai Syndrome/Lime - Renai Syndrome (apaffy) [Eternal].osu",
+      "replay": "replays-10549880/5551720125.osr"
+    },
+    {
+      "map": "songs/1686160 Nor - FEEEEVER TIME/Nor - FEEEEVER TIME (syuq) [Bunny Shooter].osu",
+      "replay": "replays-10549880/5449307300.osr"
+    },
+    {
+      "map": "songs/1842568 Andy Gillion - Insert Coin/Andy Gillion - Insert Coin (-Sylvari) [Insane].osu",
+      "replay": "replays-10549880/4680844676.osr"
+    },
+    {
+      "map": "songs/1912647 PassCode - SIREN/PassCode - SIREN (Akitoshi) [Bright Dream].osu",
+      "replay": "replays-7562902/2650139994.osr"
+    },
+    {
+      "map": "songs/1987556 xi - Heavenly Blast (2022 Remaster)/xi - Heavenly Blast (2022 Remaster) (Bloxi) [Another].osu",
+      "replay": "replays-10549880/4246862455.osr"
+    },
+    {
+      "map": "songs/1997883 Red Velvet - Power Up/Red Velvet - Power Up (AJT) [handsome's Irene].osu",
+      "replay": "replays-7562902/3295253591.osr"
+    },
+    {
+      "map": "songs/2008761 TJ.hangneil - Kamui/TJ.hangneil - Kamui (Cellina) [Luscent's Another].osu",
+      "replay": "replays-10549880/5282642545.osr"
+    },
+    {
+      "map": "songs/2100248 Seiryu - 3y3/Seiryu - 3y3s (3y3s) [-Tynamo's Extra].osu",
+      "replay": "replays-10549880/5666590868.osr"
+    },
+    {
+      "map": "songs/2129838 Lime - Pixel Prince/Lime - Pixel Princess (Wavewy) [Extra].osu",
+      "replay": "replays-10549880/4898432939.osr"
+    },
+    {
+      "map": "songs/2142528 MetaHumanBoi - Solar Strike/MetaHumanBoi - Solar Strike (Daycore) [Timevid's Sun Strike Extreme].osu",
+      "replay": "replays-10549880/4795357379.osr"
+    },
+    {
+      "map": "songs/2151390 ZUN - Kagayaku Hari no Kobitozoku ~ Little Prince/ZUN - Kagayaku Hari no Kobitozoku ~ Little Princess (Luscent) [Satellite's Lunatic].osu",
+      "replay": "replays-10549880/3919466763.osr"
+    },
+    {
+      "map": "songs/2190072 Memme - Plasma Gun/Memme - Plasma Gun (maxie) [Astronic's Extreme].osu",
+      "replay": "replays-10549880/4495780608.osr"
+    },
+    {
+      "map": "songs/2191876 wuk - Sidetracked Day/wuk - Sidetracked Day (sytho) [mrekk's Extra].osu",
+      "replay": "replays-10549880/5701352132.osr"
+    },
+    {
+      "map": "songs/2210750 bo en - My Time/bo en - My Time (Rita Summers) [Vertigo].osu",
+      "replay": "replays-7562902/3352420950.osr"
+    },
+    {
+      "map": "songs/2216137 DJ Sharpnel - Entangle Night/DJ Sharpnel - Entangle Night (aspen) [Entangle Stream -260-].osu",
+      "replay": "replays-10549880/5387295625.osr"
+    },
+    {
+      "map": "songs/2242178 Sonata Arctica - Wolf & Raven (Cut Ver.)/Sonata Arctica - Wolf & Raven (Cut Ver.) (Dabbe_01) [Generic Expert].osu",
+      "replay": "replays-10549880/4478276893.osr"
+    },
+    {
+      "map": "songs/2252339 Unlucky Morpheus - FAITH/Unlucky Morpheus - FAITH (h6zy) [SHOYEU'S EXTRA].osu",
+      "replay": "replays-10549880/7304534169.osr"
+    },
+    {
+      "map": "songs/2252729 toby fox - Song That Might Play When You Fight San/toby fox - Song That Might Play When You Fight Sans (Smoke) [Akitoshi's Extra].osu",
+      "replay": "replays-7562902/3766555468.osr"
+    },
+    {
+      "map": "songs/2252729 toby fox - Song That Might Play When You Fight San/toby fox - Song That Might Play When You Fight Sans (Smoke) [Plasma's Extra].osu",
+      "replay": "replays-7562902/3778812765.osr"
+    },
+    {
+      "map": "songs/2272606 Joost - Filthy Dog/Joost - Filthy Dog (Syph) [XD].osu",
+      "replay": "replays-10549880/6272831788.osr"
+    },
+    {
+      "map": "songs/2276949 Junichi Masuda, Hitomi Sato - You're a Winner!/Junichi Masuda, Hitomi Sato - You're a Winner! (Gaz) [Fatfan's Expert!].osu",
+      "replay": "replays-10549880/4191173093.osr"
+    },
+    {
+      "map": "songs/2289479 Silvia - Vertex Beta/Silvia - Vertex Beta (Liz Triangle) [Plasma's Extra].osu",
+      "replay": "replays-10549880/4489933303.osr"
+    },
+    {
+      "map": "songs/2299790 Cityyy - Running Man/Cityyy - Running Man (Astronic) [Relay Race].osu",
+      "replay": "replays-10549880/4740766954.osr"
+    },
+    {
+      "map": "songs/2305050 Halozy feat. Nanahira - Monosugoi Ikioi de Keine ga Monosugoi Uta (Cut Ver.)/Halozy feat. Nanahira - Monosugoi Ikioi de Keine ga Monosugoi Uta (Cut Ver.) (Remilie) [buddomekyu's Extra].osu",
+      "replay": "replays-10549880/4621288250.osr"
+    },
+    {
+      "map": "songs/2316553 DragonForce - Galactic Astro Domination/DragonForce - Galactic Astro Domination (Sayuka) [shoyeu's Expert].osu",
+      "replay": "replays-10549880/4741081781.osr"
+    },
+    {
+      "map": "songs/234646 Nero vs. After School - Sound In Motion vs. AH/Nero vs. After School - Sound In Motion vs. AH (galvenize) [Another].osu",
+      "replay": "replays-10549880/2734276883.osr"
+    },
+    {
+      "map": "songs/2361010 System Of A Down - Sugar/System Of A Down - Sugar (Cris-) [Mekadon's Another].osu",
+      "replay": "replays-10549880/5656940253.osr"
+    },
+    {
+      "map": "songs/240733 NU-KO - Pochiko no Shiawase na Nichijou/NU-KO - Pochiko no Shiawase na Nichijou (Enon) [Extra].osu",
+      "replay": "replays-10549880/4913244280.osr"
+    },
+    {
+      "map": "songs/2464472 PinkPantheress - Take me home/PinkPantheress - Take me home (Sotarks) [shoyeu's Extra].osu",
+      "replay": "replays-10549880/5919511708.osr"
+    },
+    {
+      "map": "songs/292077 Reol - Asymmetry/Reol - Asymmetry (Gaia) [Extra].osu",
+      "replay": "replays-7562902/2555386834.osr"
+    },
+    {
+      "map": "songs/29454 Au - U.Nknown Goose/Au - U.Nknown Goose (Chocopikel) [LRJ's Lunatic].osu",
+      "replay": "replays-10549880/4639723516.osr"
+    },
+    {
+      "map": "songs/318557 cosMo@BousouP feat. Hatsune Miku - Shinsekai/cosMo@BousouP feat. Hatsune Miku - Shinsekai (jonathanlfj) [Satellite's Insane].osu",
+      "replay": "replays-10549880/2483703500.osr"
+    },
+    {
+      "map": "songs/357996 Vektor - Cosmic Cortex/Vektor - Cosmic Cortex (Mazzerin) [Ascendancy].osu",
+      "replay": "replays-7562902/2463413358.osr"
+    },
+    {
+      "map": "songs/399575 MrSpazzaneve17 - osu! MEGAMIX/MrSpazzaneve17 - osu! MEGAMIX (Exile-) [The World].osu",
+      "replay": "replays-7562902/2736364778.osr"
+    },
+    {
+      "map": "songs/405524 D.J.Nero - Joker/D.J.Nero - Joker (09kami) [lsahi's Another].osu",
+      "replay": "replays-10549880/4656156232.osr"
+    },
+    {
+      "map": "songs/442587 Days N' Daze - Misanthropic Drunken Loner/Days N' Daze - Misanthropic Drunken Loner (pishifat) [Extreme].osu",
+      "replay": "replays-7562902/2606751361.osr"
+    },
+    {
+      "map": "songs/471346 saradisk - 220 - Kuman/saradisk - 220 - Kumano (Nozhomi) [oko's Extra].osu",
+      "replay": "replays-10549880/4656333647.osr"
+    },
+    {
+      "map": "songs/588475 LeaF - Alice in Misanthrope -Ensei Alice-/LeaF - Alice in Misanthrope -Ensei Alice- (Murasaki Nova) [Insane].osu",
+      "replay": "replays-10549880/4562216667.osr"
+    },
+    {
+      "map": "songs/73474 Cres - End Time/Cres - End Time (Maddy) [eXtra].osu",
+      "replay": "replays-10549880/2697810625.osr"
+    },
+    {
+      "map": "songs/814486 MYTH & ROID - VORACITY (TV Size)/MYTH & ROID - VORACITY (TV Size) (bite you death) [VERY VERY CRAZY EXTRA].osu",
+      "replay": "replays-7562902/2765956082.osr"
+    },
+    {
+      "map": "songs/844658 Korpiklaani - A Man With A Plan/Korpiklaani - A Man with a Plan (Nao Tomori) [Extra].osu",
+      "replay": "replays-10549880/5594579565.osr"
+    },
+    {
+      "map": "songs/955056 Hez-kun - Yamer/Hez-kun - Yamero (-Zeraora) [Keitaro's Emotions].osu",
+      "replay": "replays-10549880/4478378516.osr"
+    }
+  ]
+}

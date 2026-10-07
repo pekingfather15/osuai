@@ -1,0 +1,19 @@
+# data: replays, maps and music, which may not be redistributed
+data/
+datasets/
+.env
+
+# python
+__pycache__/
+*.pyc
+.venv/
+
+# training output and logs, except the released models
+models/*
+!models/v3/
+runs/
+*.log
+
+# local evaluation output
+results/eval_*.json
+results/old_pipeline_*.txt
