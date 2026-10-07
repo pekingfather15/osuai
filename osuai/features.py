@@ -120,6 +120,21 @@ def replay_targets(beatmap: Beatmap, replay: Replay) -> np.ndarray:
     return _to_chunks(states, np.zeros(4, dtype=np.float32))
 
 
+def note_spacing(beatmap: Beatmap, n_frames: int | None = None) -> np.ndarray:
+    """For every frame, the time between the next object and its neighbours (the shorter of
+    the gaps before and after it), in frames. Large where notes are sparse."""
+    starts = np.array([o.time for o in beatmap.objects], dtype=np.float64)
+    gaps = np.diff(starts) if len(starts) > 1 else np.array([1e6])
+    before = np.concatenate([[1e6], gaps])
+    after = np.concatenate([gaps, [1e6]])
+    nearest = np.minimum(before, after)
+    times = frame_times(beatmap).astype(np.float64)
+    if n_frames is not None:
+        times = beatmap.start_time + np.arange(n_frames) * FRAME_MS
+    nxt = np.clip(np.searchsorted(starts, times), 0, len(starts) - 1)
+    return nearest[nxt] / FRAME_MS
+
+
 def to_playfield(frames: np.ndarray) -> np.ndarray:
     """Model or target x, y in [-0.5, 0.5] -> osu!px, for [n, >=2] frames."""
     return np.stack([(frames[:, 0] + 0.5) * PLAYFIELD_WIDTH,

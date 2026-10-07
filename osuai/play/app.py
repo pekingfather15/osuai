@@ -77,7 +77,7 @@ class App:
         self.offset_label.grid(row=row, column=3, **pad)
         row += 1
 
-        ttk.Label(frame, text="Merge presses closer than (ms)").grid(row=row, column=0, **pad)
+        ttk.Label(frame, text="Merge presses closer than (ms, less in streams)").grid(row=row, column=0, **pad)
         ttk.Spinbox(frame, from_=0, to=100, increment=6, textvariable=self.gap, width=6,
                     command=self.regenerate).grid(row=row, column=1, **pad)
         row += 1
@@ -177,7 +177,7 @@ class App:
                 play = generate(path, md5, mods, self.cursor_model, self.key_model,
                                 merge_gap_ms=gap or None, cursor_only=cursor_only)
                 self.player.play = play
-                what = "cursor only (turn on Relax)" if play.cursor_only else f"cursor + keys, merge {gap} ms"
+                what = "cursor only (turn on Relax)" if play.cursor_only else f"cursor + keys, merge {gap} ms or 0.4x note spacing"
                 self.log(f"generated: {self.tosu.map_title()} ({what})")
             except Exception as e:
                 self.log(f"could not generate a play: {e}")

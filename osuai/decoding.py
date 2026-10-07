@@ -20,14 +20,24 @@ def threshold(probs: np.ndarray, level: float = 0.5) -> np.ndarray:
     return (probs > level).astype(np.float32)
 
 
-def merge_presses(probs: np.ndarray, min_gap_frames: int, level: float = 0.5) -> np.ndarray:
-    """probs: [frames, 2]. Returns [frames, 2] key states (0/1)."""
+def merge_presses(probs: np.ndarray, min_gap_frames: float, level: float = 0.5,
+                  note_spacing: np.ndarray | None = None, spacing_ratio: float | None = None) -> np.ndarray:
+    """probs: [frames, 2]. Returns [frames, 2] key states (0/1).
+
+    With note_spacing (frames between nearby notes, per frame) and spacing_ratio, the gap
+    shrinks to spacing_ratio * note_spacing in dense parts: in a fast stream two real
+    presses can be closer than a fixed gap, and merging them loses a note."""
     held = probs > level
     presses = sorted([(s, e, k) for k in (0, 1) for s, e in _runs(held[:, k])])
 
+    def gap_at(frame: int) -> float:
+        if note_spacing is None or spacing_ratio is None:
+            return min_gap_frames
+        return min(min_gap_frames, spacing_ratio * note_spacing[min(frame, len(note_spacing) - 1)])
+
     merged: list[list[int]] = []  # [start, end, key]
     for start, end, key in presses:
-        if merged and start - merged[-1][0] < min_gap_frames:
+        if merged and start - merged[-1][0] < gap_at(merged[-1][0]):
             merged[-1][1] = max(merged[-1][1], end)
         else:
             merged.append([start, end, key])

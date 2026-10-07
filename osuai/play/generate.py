@@ -22,7 +22,10 @@ class Play:
 
 
 def generate(map_path: str, md5: str, mods: int, cursor_model, key_model: KeyModel | None,
-             merge_gap_ms: float | None = 36, cursor_only: bool = False, seed: int | None = None) -> Play:
+             merge_gap_ms: float | None = 36, cursor_only: bool = False, seed: int | None = None,
+             spacing_ratio: float | None = 0.4) -> Play:
+    """Presses closer than merge_gap_ms, or than spacing_ratio times the local note spacing
+    (whichever is smaller, chosen on the validation set), are merged into one."""
     beatmap = bm.load(map_path, mods)
     if not beatmap.objects:
         raise ValueError("the map has no hit objects")
@@ -34,7 +37,9 @@ def generate(map_path: str, md5: str, mods: int, cursor_model, key_model: KeyMod
     else:
         probs = key_model.hold_probabilities(x).reshape(-1, 2)
         if merge_gap_ms:
-            keys = decoding.merge_presses(probs, max(1, round(merge_gap_ms / features.FRAME_MS)))
+            spacing = features.note_spacing(beatmap, len(probs)) if spacing_ratio else None
+            keys = decoding.merge_presses(probs, merge_gap_ms / features.FRAME_MS,
+                                          note_spacing=spacing, spacing_ratio=spacing_ratio)
         else:
             keys = decoding.threshold(probs)
         keys = keys[:n]

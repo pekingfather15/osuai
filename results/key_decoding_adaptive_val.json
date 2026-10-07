@@ -1,0 +1,224 @@
+{
+  "split": "val",
+  "cursor": "D:\\project\\osu-ai\\models\\v3\\cursor_tcn_wgan.pt",
+  "keys": "D:\\project\\osu-ai\\models\\v3\\keys_lstm.pt",
+  "seed": 0,
+  "plays": [
+    "replays-osu3k/4123740.osr",
+    "replays-osu3k/4126190.osr",
+    "replays-osu3k/4123861.osr",
+    "replays-osu3k/4125775.osr",
+    "replays-osu3k/4124090.osr",
+    "replays-osu3k/4124409.osr",
+    "replays-osu3k/4126121.osr",
+    "replays-osu3k/4123975.osr",
+    "replays-osu3k/4124108.osr",
+    "replays-osu3k/4126996.osr",
+    "replays-osu3k/4125806.osr",
+    "replays-osu3k/4127262.osr",
+    "replays-osu3k/4125390.osr",
+    "replays-osu3k/4126090.osr",
+    "replays-osu3k/4124152.osr",
+    "replays-osu3k/4126360.osr",
+    "replays-osu3k/4125046.osr",
+    "replays-7562902/4207349987.osr",
+    "replays-7562902/1798248037.osr",
+    "replays-7562902/7254767303.osr",
+    "replays-10549880/5101796175.osr",
+    "replays-7562902/5164068870.osr",
+    "replays-10549880/4756745276.osr",
+    "replays-7562902/6405616958.osr",
+    "replays-10549880/3714227495.osr",
+    "replays-7562902/6169727030.osr",
+    "replays-7562902/2254419619.osr",
+    "replays-7562902/6108359037.osr",
+    "replays-7562902/1596365363.osr",
+    "replays-7562902/3328087822.osr"
+  ],
+  "results": {
+    "human": {
+      "plays": 30,
+      "relax_accuracy": 0.9594762915782024,
+      "relax": {
+        "300": 22584,
+        "100": 34,
+        "50": 2,
+        "0": 930
+      },
+      "hit_rate": 0.9444161358811041,
+      "mean_distance": 19.24515913005758,
+      "median_distance": 11.724303038237561,
+      "spinner_rpm": 387.51031701268727,
+      "full_accuracy": 0.9089242745930644,
+      "keys": {
+        "300": 20906,
+        "100": 1482,
+        "50": 31,
+        "0": 1131
+      },
+      "slider_tail_rate": 0.9425631674915342,
+      "presses_per_object": 0.9973673036093418
+    },
+    "model, threshold": {
+      "plays": 30,
+      "relax_accuracy": 0.998351026185421,
+      "relax": {
+        "300": 23505,
+        "100": 16,
+        "50": 5,
+        "0": 24
+      },
+      "hit_rate": 0.992823779193206,
+      "mean_distance": 7.981363440502819,
+      "median_distance": 6.405686104273742,
+      "spinner_rpm": 403.55083299597294,
+      "full_accuracy": 0.9139136588818118,
+      "keys": {
+        "300": 20856,
+        "100": 1555,
+        "50": 890,
+        "0": 249
+      },
+      "slider_tail_rate": 0.9452982547538421,
+      "presses_per_object": 1.2917197452229299
+    },
+    "model, merge 36 ms": {
+      "plays": 30,
+      "relax_accuracy": 0.998351026185421,
+      "relax": {
+        "300": 23505,
+        "100": 16,
+        "50": 5,
+        "0": 24
+      },
+      "hit_rate": 0.992823779193206,
+      "mean_distance": 7.981363440502819,
+      "median_distance": 6.405686104273742,
+      "spinner_rpm": 403.55083299597294,
+      "full_accuracy": 0.9569851380042463,
+      "keys": {
+        "300": 22270,
+        "100": 739,
+        "50": 124,
+        "0": 417
+      },
+      "slider_tail_rate": 0.9644438655899974,
+      "presses_per_object": 1.020339702760085
+    },
+    "model, merge 36 ms or 0.4x spacing": {
+      "plays": 30,
+      "relax_accuracy": 0.998351026185421,
+      "relax": {
+        "300": 23505,
+        "100": 16,
+        "50": 5,
+        "0": 24
+      },
+      "hit_rate": 0.992823779193206,
+      "mean_distance": 7.981363440502819,
+      "median_distance": 6.405686104273742,
+      "spinner_rpm": 403.55083299597294,
+      "full_accuracy": 0.9595895258315641,
+      "keys": {
+        "300": 22335,
+        "100": 740,
+        "50": 100,
+        "0": 375
+      },
+      "slider_tail_rate": 0.9654858035946862,
+      "presses_per_object": 1.023991507430998
+    },
+    "model, merge 36 ms or 0.5x spacing": {
+      "plays": 30,
+      "relax_accuracy": 0.998351026185421,
+      "relax": {
+        "300": 23505,
+        "100": 16,
+        "50": 5,
+        "0": 24
+      },
+      "hit_rate": 0.992823779193206,
+      "mean_distance": 7.981363440502819,
+      "median_distance": 6.405686104273742,
+      "spinner_rpm": 403.55083299597294,
+      "full_accuracy": 0.9574946921443737,
+      "keys": {
+        "300": 22284,
+        "100": 734,
+        "50": 122,
+        "0": 410
+      },
+      "slider_tail_rate": 0.9649648345923417,
+      "presses_per_object": 1.0207218683651804
+    },
+    "model, merge 36 ms or 0.6x spacing": {
+      "plays": 30,
+      "relax_accuracy": 0.998351026185421,
+      "relax": {
+        "300": 23505,
+        "100": 16,
+        "50": 5,
+        "0": 24
+      },
+      "hit_rate": 0.992823779193206,
+      "mean_distance": 7.981363440502819,
+      "median_distance": 6.405686104273742,
+      "spinner_rpm": 403.55083299597294,
+      "full_accuracy": 0.9569851380042463,
+      "keys": {
+        "300": 22270,
+        "100": 739,
+        "50": 124,
+        "0": 417
+      },
+      "slider_tail_rate": 0.9644438655899974,
+      "presses_per_object": 1.020339702760085
+    },
+    "model, merge 36 ms or 0.7x spacing": {
+      "plays": 30,
+      "relax_accuracy": 0.998351026185421,
+      "relax": {
+        "300": 23505,
+        "100": 16,
+        "50": 5,
+        "0": 24
+      },
+      "hit_rate": 0.992823779193206,
+      "mean_distance": 7.981363440502819,
+      "median_distance": 6.405686104273742,
+      "spinner_rpm": 403.55083299597294,
+      "full_accuracy": 0.9569851380042463,
+      "keys": {
+        "300": 22270,
+        "100": 739,
+        "50": 124,
+        "0": 417
+      },
+      "slider_tail_rate": 0.9644438655899974,
+      "presses_per_object": 1.020339702760085
+    },
+    "model, merge 48 ms or 0.6x spacing": {
+      "plays": 30,
+      "relax_accuracy": 0.998351026185421,
+      "relax": {
+        "300": 23505,
+        "100": 16,
+        "50": 5,
+        "0": 24
+      },
+      "hit_rate": 0.992823779193206,
+      "mean_distance": 7.981363440502819,
+      "median_distance": 6.405686104273742,
+      "spinner_rpm": 403.55083299597294,
+      "full_accuracy": 0.9546284501061572,
+      "keys": {
+        "300": 22315,
+        "100": 411,
+        "50": 177,
+        "0": 647
+      },
+      "slider_tail_rate": 0.9583224798124511,
+      "presses_per_object": 0.9901061571125266
+    }
+  }
+}
