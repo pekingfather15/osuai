@@ -1,0 +1,28 @@
+[project]
+name = "osuai"
+version = "0.2.0"
+description = "Neural networks that learn to play osu! like a human from replays"
+readme = "README.md"
+requires-python = ">=3.11,<3.12"
+dependencies = [
+    "numpy>=2.0",
+    "pandas>=2.2",
+    "torch>=2.4.0",
+    "requests>=2.32",
+    "websocket-client>=1.8",
+    "keyboard>=0.13.5",
+    "matplotlib>=3.9",
+]
+
+[project.optional-dependencies]
+osu3k = ["kaggle>=1.6"]
+
+[[tool.uv.index]]
+name = "pytorch-cu124"
+url = "https://download.pytorch.org/whl/cu124"
+explicit = true
+
+[tool.uv.sources]
+torch = [
+  { index = "pytorch-cu124", marker = "(sys_platform == 'linux' and platform_machine == 'x86_64') or sys_platform == 'win32'" },
+]
