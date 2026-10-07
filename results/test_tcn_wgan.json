@@ -124,6 +124,29 @@
       },
       "slider_tail_rate": 0.9579546497750849,
       "presses_per_object": 1.0012416064867604
+    },
+    "model, merge 36 ms or 0.4x spacing": {
+      "plays": 50,
+      "relax_accuracy": 0.9988935343553359,
+      "relax": {
+        "300": 39416,
+        "100": 14,
+        "50": 4,
+        "0": 31
+      },
+      "hit_rate": 0.9950082351450652,
+      "mean_distance": 8.342008822542368,
+      "median_distance": 7.034085930776933,
+      "spinner_rpm": 394.0000864168524,
+      "full_accuracy": 0.9600616580092065,
+      "keys": {
+        "300": 37477,
+        "100": 1085,
+        "50": 301,
+        "0": 602
+      },
+      "slider_tail_rate": 0.9626365555861562,
+      "presses_per_object": 1.0095020904599012
     }
   }
 }
