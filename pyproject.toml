@@ -3,6 +3,8 @@ name = "osuai"
 version = "0.2.0"
 description = "Neural networks that learn to play osu! like a human from replays"
 readme = "README.md"
+license = "MIT"
+authors = [{ name = "pekin" }]
 requires-python = ">=3.11,<3.12"
 dependencies = [
     "numpy>=2.0",

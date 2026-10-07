@@ -2,7 +2,7 @@
 
 **English** · [中文](#中文说明) · Paper: [English PDF](paper/paper_en.pdf) · [中文 PDF](paper/paper_zh.pdf) · [Experiment log / 实验记录](results/RESULTS.md)
 
-![Python 3.11](https://img.shields.io/badge/python-3.11-blue) ![PyTorch](https://img.shields.io/badge/PyTorch-2.6-ee4c2c) ![osu!lazer](https://img.shields.io/badge/osu!-lazer-ff66aa) ![Windows](https://img.shields.io/badge/platform-Windows-lightgrey)
+![Python 3.11](https://img.shields.io/badge/python-3.11-blue) ![PyTorch](https://img.shields.io/badge/PyTorch-2.6-ee4c2c) ![osu!lazer](https://img.shields.io/badge/osu!-lazer-ff66aa) ![Windows](https://img.shields.io/badge/platform-Windows-lightgrey) [![MIT licence](https://img.shields.io/badge/licence-MIT-green)](LICENSE)
 
 Neural networks that learn from top players' replays how to play the rhythm game
 [osu!](https://osu.ppy.sh), and play the result back in osu!lazer. The goal is not a perfect
@@ -144,6 +144,27 @@ scratch, and the V3 models were converted to it with identical outputs. Data: th
 [tosu](https://github.com/tosuapp/tosu) and [osu!lazer](https://github.com/ppy/osu). The code,
 experiments and paper were developed with Claude (Anthropic) as a coding assistant.
 
+## Models
+
+The trained V3 models are in [`models/v3/`](models/v3) and attached to the
+[releases](https://github.com/pekingfather15/osuai/releases):
+
+| File | Model | Size |
+|---|---|---|
+| `cursor_tcn_wgan.pt` | TCN-WGAN cursor model (generator and critic) | 1.7 MB |
+| `cursor_lstm.pt` | LSTM cursor baseline | 0.9 MB |
+| `keys_lstm.pt` | Key model | 0.2 MB |
+
+Load them with `osuai.models.load_cursor(path)` and `osuai.models.KeyModel.load(path)`. They
+were trained on public replays of top players and the osu!3k dataset; the replays, maps and
+music themselves are not distributed.
+
+## Licence
+
+The code and the trained models are released under the [MIT licence](LICENSE). The paper is
+under [CC BY 4.0](paper/LICENSE.md). osu! is a trademark of ppy Pty Ltd; this project is not
+affiliated with ppy.
+
 ## Citation
 
 ```bibtex
@@ -244,6 +265,22 @@ osu!lazer ◄── 鼠标和键盘 ◄── 回放循环 ◄── tosu 提供
 - **按键模型是短板。** 它逐帧预测按键是否按住，损失函数对准确的按下时刻不敏感。在一张 260 BPM、开 HD HR 的谱面上，不开 Relax 仍会失败。
   下一步：训练直接预测按下事件的按键模型，包括帧内偏移、与物件结束时刻绑定的松开时间，并以生成的光标轨迹作为输入。
 - 直接衡量"像人"的程度（速度、加加速度的分布，分类器测试），而不只看准确率。
+
+### 模型
+
+训练好的 V3 模型在 [`models/v3/`](models/v3) 里，也附在 [Releases](https://github.com/pekingfather15/osuai/releases) 页面：
+
+| 文件 | 模型 | 大小 |
+|---|---|---|
+| `cursor_tcn_wgan.pt` | TCN-WGAN 光标模型（生成器和判别器） | 1.7 MB |
+| `cursor_lstm.pt` | LSTM 光标基线 | 0.9 MB |
+| `keys_lstm.pt` | 按键模型 | 0.2 MB |
+
+用 `osuai.models.load_cursor(path)` 和 `osuai.models.KeyModel.load(path)` 加载。模型由顶尖玩家的公开回放和 osu!3k 数据集训练而成，仓库不分发回放、谱面和音乐本身。
+
+### 许可证
+
+代码和训练好的模型以 [MIT 许可证](LICENSE) 发布，论文以 [CC BY 4.0](paper/LICENSE.md) 发布。osu! 是 ppy Pty Ltd 的商标，本项目与 ppy 无关。
 
 ### 使用须知
 
