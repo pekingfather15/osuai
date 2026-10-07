@@ -14,7 +14,7 @@ import os
 import numpy as np
 
 from . import beatmap as bm, decoding, features, judge, paths, replay as rp
-from .models import CursorModel, KeyModel
+from .models import KeyModel, load_cursor
 
 
 def load_split(name: str) -> list[dict]:
@@ -39,7 +39,7 @@ def main():
     ap.add_argument("--only", help="file with replay paths to restrict to (one per line)")
     args = ap.parse_args()
 
-    cursor_model = CursorModel.load(args.cursor)
+    cursor_model = load_cursor(args.cursor)
     key_model = KeyModel.load(args.keys)
     gaps = [None if g == "none" else float(g) for g in args.gaps]
     cases = load_split(args.split)

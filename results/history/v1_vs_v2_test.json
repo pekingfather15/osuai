@@ -1,0 +1,84 @@
+{
+  "timestamp": "2026-10-07_05-05-26",
+  "seed": 0,
+  "models": [
+    ".trained/v1/replayrnn_most_recent.pt",
+    ".trained/v1/replayvae_most_recent.pt",
+    ".trained/v1/replaywgan_most_recent.pt",
+    ".trained/v2/replayrnn_most_recent.pt",
+    ".trained/v2/replayvae_most_recent.pt",
+    ".trained/v2/replaywgan_most_recent.pt"
+  ],
+  "replays": {
+    "train": 0,
+    "test": 50
+  },
+  "results": {
+    "train": {},
+    "test": {
+      "human": {
+        "maps": 46,
+        "objects": 35278,
+        "aim_hit_rate": 0.8294120981915074,
+        "mean_distance_px": 11.925511222030366,
+        "median_distance_px": 10.631086763404065,
+        "spinner_rpm": 370.9557854822405,
+        "spinner_minutes": 1.0865666666666667
+      },
+      "v1/replayrnn": {
+        "maps": 46,
+        "objects": 35278,
+        "aim_hit_rate": 0.9306366574068825,
+        "mean_distance_px": 9.060948484547268,
+        "median_distance_px": 8.05102799958972,
+        "spinner_rpm": 3.3870198756041483,
+        "spinner_minutes": 1.0865666666666667
+      },
+      "v1/replayvae": {
+        "maps": 46,
+        "objects": 35278,
+        "aim_hit_rate": 0.12350473382844833,
+        "mean_distance_px": 47.21335243545892,
+        "median_distance_px": 40.11492352919841,
+        "spinner_rpm": 59.806872959838635,
+        "spinner_minutes": 1.0865666666666667
+      },
+      "v1/replaywgan": {
+        "maps": 46,
+        "objects": 35278,
+        "aim_hit_rate": 0.2518850274958898,
+        "mean_distance_px": 33.482307641384025,
+        "median_distance_px": 27.54308306433856,
+        "spinner_rpm": 39.17154120978146,
+        "spinner_minutes": 1.0865666666666667
+      },
+      "v2/replayrnn": {
+        "maps": 46,
+        "objects": 35278,
+        "aim_hit_rate": 0.9253075571177505,
+        "mean_distance_px": 9.748934684473662,
+        "median_distance_px": 8.826438898295397,
+        "spinner_rpm": 5.829658403967917,
+        "spinner_minutes": 1.0865666666666667
+      },
+      "v2/replayvae": {
+        "maps": 46,
+        "objects": 35278,
+        "aim_hit_rate": 0.198452293213901,
+        "mean_distance_px": 39.22148132638885,
+        "median_distance_px": 31.851587196750202,
+        "spinner_rpm": 46.026355235472515,
+        "spinner_minutes": 1.0865666666666667
+      },
+      "v2/replaywgan": {
+        "maps": 46,
+        "objects": 35278,
+        "aim_hit_rate": 0.4841260842451386,
+        "mean_distance_px": 24.295580568336806,
+        "median_distance_px": 18.22001651707115,
+        "spinner_rpm": 33.837739539577115,
+        "spinner_minutes": 1.0865666666666667
+      }
+    }
+  }
+}

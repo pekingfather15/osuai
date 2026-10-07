@@ -1,0 +1,171 @@
+{
+  "timestamp": "2026-10-07_21-57-40",
+  "seed": 0,
+  "models": [
+    ".trained/v3/replaytcnwgan_most_recent.pt"
+  ],
+  "key_model": ".trained/v3/key_most_recent.pt",
+  "min_press_gaps": [
+    "none",
+    "24",
+    "36",
+    "48",
+    "60"
+  ],
+  "replays": "18443/360/855/1806",
+  "results": {
+    "train": {},
+    "test": {
+      "human": {
+        "full_accuracy": 0.9046232451236178,
+        "key_judgements": {
+          "300": 18965,
+          "100": 1340,
+          "50": 31,
+          "miss": 1128
+        },
+        "slider_tail_rate": 0.9366685945633314,
+        "presses_per_object": 0.9946887812150578,
+        "relax_accuracy": 0.9555845446639334,
+        "relax_judgements": {
+          "300": 20499,
+          "100": 34,
+          "50": 2,
+          "miss": 929
+        },
+        "maps": 27,
+        "objects": 21464,
+        "aim_hit_rate": 0.9393868803578084,
+        "mean_distance_px": 20.03891026352783,
+        "median_distance_px": 11.871577810228175,
+        "spinner_rpm": 379.2042803971553,
+        "spinner_minutes": 0.9356444444444453
+      },
+      "v3/replaytcnwgan+raw": {
+        "full_accuracy": 0.9088784321033668,
+        "key_judgements": {
+          "300": 18867,
+          "100": 1496,
+          "50": 855,
+          "miss": 246
+        },
+        "slider_tail_rate": 0.9410063620589937,
+        "presses_per_object": 1.3110790160268357,
+        "relax_accuracy": 0.9982140638588645,
+        "relax_judgements": {
+          "300": 21419,
+          "100": 17,
+          "50": 6,
+          "miss": 22
+        },
+        "maps": 27,
+        "objects": 21464,
+        "aim_hit_rate": 0.9920331718225867,
+        "mean_distance_px": 8.126538114361017,
+        "median_distance_px": 6.471953326344746,
+        "spinner_rpm": 403.1205759148018,
+        "spinner_minutes": 0.9356444444444453
+      },
+      "v3/replaytcnwgan+gap24": {
+        "full_accuracy": 0.949341533109703,
+        "key_judgements": {
+          "300": 20057,
+          "100": 854,
+          "50": 210,
+          "miss": 343
+        },
+        "slider_tail_rate": 0.9619722382880278,
+        "presses_per_object": 1.0395546030562803,
+        "relax_accuracy": 0.9982140638588645,
+        "relax_judgements": {
+          "300": 21419,
+          "100": 17,
+          "50": 6,
+          "miss": 22
+        },
+        "maps": 27,
+        "objects": 21464,
+        "aim_hit_rate": 0.9920331718225867,
+        "mean_distance_px": 8.126538114361017,
+        "median_distance_px": 6.471953326344746,
+        "spinner_rpm": 403.1205759148018,
+        "spinner_minutes": 0.9356444444444453
+      },
+      "v3/replaytcnwgan+gap36": {
+        "full_accuracy": 0.9541868555100013,
+        "key_judgements": {
+          "300": 20219,
+          "100": 725,
+          "50": 120,
+          "miss": 400
+        },
+        "slider_tail_rate": 0.9622614227877386,
+        "presses_per_object": 1.0213380544166977,
+        "relax_accuracy": 0.9982140638588645,
+        "relax_judgements": {
+          "300": 21419,
+          "100": 17,
+          "50": 6,
+          "miss": 22
+        },
+        "maps": 27,
+        "objects": 21464,
+        "aim_hit_rate": 0.9920331718225867,
+        "mean_distance_px": 8.126538114361017,
+        "median_distance_px": 6.471953326344746,
+        "spinner_rpm": 403.1205759148018,
+        "spinner_minutes": 0.9356444444444453
+      },
+      "v3/replaytcnwgan+gap48": {
+        "full_accuracy": 0.9350152192818983,
+        "key_judgements": {
+          "300": 19877,
+          "100": 389,
+          "50": 375,
+          "miss": 823
+        },
+        "slider_tail_rate": 0.9470792365529208,
+        "presses_per_object": 0.979547148714126,
+        "relax_accuracy": 0.9982140638588645,
+        "relax_judgements": {
+          "300": 21419,
+          "100": 17,
+          "50": 6,
+          "miss": 22
+        },
+        "maps": 27,
+        "objects": 21464,
+        "aim_hit_rate": 0.9920331718225867,
+        "mean_distance_px": 8.126538114361017,
+        "median_distance_px": 6.471953326344746,
+        "spinner_rpm": 403.1205759148018,
+        "spinner_minutes": 0.9356444444444453
+      },
+      "v3/replaytcnwgan+gap60": {
+        "full_accuracy": 0.8714824822959374,
+        "key_judgements": {
+          "300": 18443,
+          "100": 360,
+          "50": 855,
+          "miss": 1806
+        },
+        "slider_tail_rate": 0.9090514748409485,
+        "presses_per_object": 0.9308143868803578,
+        "relax_accuracy": 0.9982140638588645,
+        "relax_judgements": {
+          "300": 21419,
+          "100": 17,
+          "50": 6,
+          "miss": 22
+        },
+        "maps": 27,
+        "objects": 21464,
+        "aim_hit_rate": 0.9920331718225867,
+        "mean_distance_px": 8.126538114361017,
+        "median_distance_px": 6.471953326344746,
+        "spinner_rpm": 403.1205759148018,
+        "spinner_minutes": 0.9356444444444453
+      }
+    }
+  }
+}

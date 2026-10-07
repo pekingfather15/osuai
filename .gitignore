@@ -16,4 +16,3 @@ runs/
 
 # local evaluation output
 results/eval_*.json
-results/old_pipeline_*.txt

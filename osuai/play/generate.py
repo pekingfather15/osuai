@@ -7,7 +7,7 @@ from dataclasses import dataclass
 import numpy as np
 
 from .. import beatmap as bm, decoding, features
-from ..models import CursorModel, KeyModel
+from ..models import KeyModel
 
 
 @dataclass
@@ -21,7 +21,7 @@ class Play:
     cursor_only: bool
 
 
-def generate(map_path: str, md5: str, mods: int, cursor_model: CursorModel, key_model: KeyModel | None,
+def generate(map_path: str, md5: str, mods: int, cursor_model, key_model: KeyModel | None,
              merge_gap_ms: float | None = 36, cursor_only: bool = False, seed: int | None = None) -> Play:
     beatmap = bm.load(map_path, mods)
     if not beatmap.objects:

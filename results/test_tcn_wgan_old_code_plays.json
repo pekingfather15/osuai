@@ -1,0 +1,125 @@
+{
+  "split": "test",
+  "cursor": "D:\\project\\osu-ai\\models\\v3\\cursor_tcn_wgan.pt",
+  "keys": "D:\\project\\osu-ai\\models\\v3\\keys_lstm.pt",
+  "seed": 0,
+  "plays": [
+    "replays-7562902/3328109693.osr",
+    "replays-7562902/3459553058.osr",
+    "replays-10549880/5859817969.osr",
+    "replays-10549880/4291805688.osr",
+    "replays-7562902/2665980452.osr",
+    "replays-10549880/4729539614.osr",
+    "replays-7562902/3401380332.osr",
+    "replays-10549880/1807984093.osr",
+    "replays-10549880/5551720125.osr",
+    "replays-10549880/5449307300.osr",
+    "replays-10549880/4680844676.osr",
+    "replays-7562902/2650139994.osr",
+    "replays-7562902/3295253591.osr",
+    "replays-10549880/5282642545.osr",
+    "replays-10549880/5666590868.osr",
+    "replays-10549880/4898432939.osr",
+    "replays-10549880/4795357379.osr",
+    "replays-10549880/3919466763.osr",
+    "replays-10549880/4495780608.osr",
+    "replays-10549880/5701352132.osr",
+    "replays-7562902/3352420950.osr",
+    "replays-10549880/5387295625.osr",
+    "replays-10549880/4478276893.osr",
+    "replays-10549880/7304534169.osr",
+    "replays-7562902/3766555468.osr",
+    "replays-7562902/3778812765.osr",
+    "replays-10549880/6272831788.osr",
+    "replays-10549880/4191173093.osr",
+    "replays-10549880/4489933303.osr",
+    "replays-10549880/4740766954.osr",
+    "replays-10549880/4621288250.osr",
+    "replays-10549880/2734276883.osr",
+    "replays-10549880/5656940253.osr",
+    "replays-10549880/5919511708.osr",
+    "replays-7562902/2555386834.osr",
+    "replays-10549880/4639723516.osr",
+    "replays-10549880/2483703500.osr",
+    "replays-7562902/2463413358.osr",
+    "replays-10549880/4656156232.osr",
+    "replays-7562902/2606751361.osr",
+    "replays-10549880/4656333647.osr",
+    "replays-10549880/4562216667.osr",
+    "replays-10549880/2697810625.osr",
+    "replays-7562902/2765956082.osr",
+    "replays-10549880/5594579565.osr",
+    "replays-10549880/4478378516.osr"
+  ],
+  "results": {
+    "human": {
+      "plays": 46,
+      "relax_accuracy": 0.9998015760530642,
+      "relax": {
+        "300": 35270,
+        "100": 3,
+        "50": 0,
+        "0": 5
+      },
+      "hit_rate": 0.9898236861500085,
+      "mean_distance": 11.901656126559034,
+      "median_distance": 10.6291659286902,
+      "spinner_rpm": 370.9557842292974,
+      "full_accuracy": 0.960267966815957,
+      "keys": {
+        "300": 33199,
+        "100": 2020,
+        "50": 24,
+        "0": 35
+      },
+      "slider_tail_rate": 0.9935161564625851,
+      "presses_per_object": 1.0213447474346617
+    },
+    "model, threshold": {
+      "plays": 46,
+      "relax_accuracy": 0.9989133926715422,
+      "relax": {
+        "300": 35235,
+        "100": 13,
+        "50": 2,
+        "0": 28
+      },
+      "hit_rate": 0.9950960938828732,
+      "mean_distance": 8.29945587242179,
+      "median_distance": 6.986219292644398,
+      "spinner_rpm": 396.9411775134949,
+      "full_accuracy": 0.9344019880189731,
+      "keys": {
+        "300": 32180,
+        "100": 1897,
+        "50": 909,
+        "0": 292
+      },
+      "slider_tail_rate": 0.9529124149659864,
+      "presses_per_object": 1.1538919439877544
+    },
+    "model, merge 36 ms": {
+      "plays": 46,
+      "relax_accuracy": 0.9989133926715422,
+      "relax": {
+        "300": 35235,
+        "100": 13,
+        "50": 2,
+        "0": 28
+      },
+      "hit_rate": 0.9950960938828732,
+      "mean_distance": 8.29945587242179,
+      "median_distance": 6.986219292644398,
+      "spinner_rpm": 396.9411775134949,
+      "full_accuracy": 0.9547309938205114,
+      "keys": {
+        "300": 33314,
+        "100": 928,
+        "50": 346,
+        "0": 690
+      },
+      "slider_tail_rate": 0.9553571428571429,
+      "presses_per_object": 1.0005669255626737
+    }
+  }
+}

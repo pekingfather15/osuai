@@ -1,0 +1,93 @@
+{
+  "timestamp": "2026-10-07_21-58-35",
+  "seed": 0,
+  "models": [
+    ".trained/v3/replaytcnwgan_most_recent.pt"
+  ],
+  "key_model": ".trained/v3/key_most_recent.pt",
+  "min_press_gaps": [
+    "none",
+    "36"
+  ],
+  "replays": "33319/940/334/685",
+  "results": {
+    "train": {},
+    "test": {
+      "human": {
+        "full_accuracy": 0.9583923880794452,
+        "key_judgements": {
+          "300": 33107,
+          "100": 2094,
+          "50": 31,
+          "miss": 46
+        },
+        "slider_tail_rate": 0.9928784013605442,
+        "presses_per_object": 1.022591983672544,
+        "relax_accuracy": 0.9997448834967969,
+        "relax_judgements": {
+          "300": 35267,
+          "100": 6,
+          "50": 0,
+          "miss": 5
+        },
+        "maps": 46,
+        "objects": 35278,
+        "aim_hit_rate": 0.9896536084812064,
+        "mean_distance_px": 11.925511222030366,
+        "median_distance_px": 10.631086763404065,
+        "spinner_rpm": 370.9557854822405,
+        "spinner_minutes": 1.0865666666666667
+      },
+      "v3/replaytcnwgan+raw": {
+        "full_accuracy": 0.9341185252376363,
+        "key_judgements": {
+          "300": 32163,
+          "100": 1921,
+          "50": 903,
+          "miss": 291
+        },
+        "slider_tail_rate": 0.9528061224489796,
+        "presses_per_object": 1.154458869550428,
+        "relax_accuracy": 0.9988614244949638,
+        "relax_judgements": {
+          "300": 35233,
+          "100": 13,
+          "50": 3,
+          "miss": 29
+        },
+        "maps": 46,
+        "objects": 35278,
+        "aim_hit_rate": 0.9951244401610069,
+        "mean_distance_px": 8.295405206513934,
+        "median_distance_px": 7.020152580700602,
+        "spinner_rpm": 396.82563016832705,
+        "spinner_minutes": 1.0865666666666667
+      },
+      "v3/replaytcnwgan+gap36": {
+        "full_accuracy": 0.9549294177674471,
+        "key_judgements": {
+          "300": 33319,
+          "100": 940,
+          "50": 334,
+          "miss": 685
+        },
+        "slider_tail_rate": 0.9555697278911565,
+        "presses_per_object": 1.0005102330064062,
+        "relax_accuracy": 0.9988614244949638,
+        "relax_judgements": {
+          "300": 35233,
+          "100": 13,
+          "50": 3,
+          "miss": 29
+        },
+        "maps": 46,
+        "objects": 35278,
+        "aim_hit_rate": 0.9951244401610069,
+        "mean_distance_px": 8.295405206513934,
+        "median_distance_px": 7.020152580700602,
+        "spinner_rpm": 396.82563016832705,
+        "spinner_minutes": 1.0865666666666667
+      }
+    }
+  }
+}

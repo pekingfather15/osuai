@@ -17,7 +17,7 @@ from tkinter import filedialog, ttk
 import keyboard
 
 from .. import mods as mod_flags, paths
-from ..models import CursorModel, KeyModel
+from ..models import KeyModel, load_cursor
 from .generate import generate
 from .player import Player
 from .tosu import Tosu
@@ -122,7 +122,7 @@ class App:
     def load_models(self, cursor_path: str | None, keys_path: str | None):
         try:
             if cursor_path:
-                self.cursor_model = CursorModel.load(cursor_path)
+                self.cursor_model = load_cursor(cursor_path)
             if keys_path:
                 self.key_model = KeyModel.load(keys_path)
         except Exception as e:

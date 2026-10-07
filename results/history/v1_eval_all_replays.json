@@ -1,0 +1,91 @@
+{
+  "timestamp": "2026-10-07_03-31-15",
+  "seed": 0,
+  "models": [
+    ".trained\\replayrnn_most_recent.pt",
+    ".trained\\replayvae_most_recent.pt",
+    ".trained\\replaywgan_most_recent.pt"
+  ],
+  "replays": {
+    "train": 213,
+    "test": 201
+  },
+  "results": {
+    "train": {
+      "human": {
+        "maps": 203,
+        "objects": 235694,
+        "aim_hit_rate": 0.8319558410481387,
+        "mean_distance_px": 11.84617934865173,
+        "median_distance_px": 10.477871568064014,
+        "spinner_rpm": 349.34121458259096,
+        "spinner_minutes": 11.128344444444444
+      },
+      "replayrnn": {
+        "maps": 203,
+        "objects": 235694,
+        "aim_hit_rate": 0.8940193640907278,
+        "mean_distance_px": 10.086904466689823,
+        "median_distance_px": 8.760029146643822,
+        "spinner_rpm": 3.0219274135828216,
+        "spinner_minutes": 11.128344444444444
+      },
+      "replayvae": {
+        "maps": 203,
+        "objects": 235694,
+        "aim_hit_rate": 0.11302366627915857,
+        "mean_distance_px": 51.063290886232345,
+        "median_distance_px": 42.926256082169175,
+        "spinner_rpm": 39.405856935620356,
+        "spinner_minutes": 11.128344444444444
+      },
+      "replaywgan": {
+        "maps": 203,
+        "objects": 235694,
+        "aim_hit_rate": 0.23208057905589452,
+        "mean_distance_px": 36.1844343371531,
+        "median_distance_px": 29.45576274883227,
+        "spinner_rpm": 25.718116298853026,
+        "spinner_minutes": 11.128344444444444
+      }
+    },
+    "test": {
+      "human": {
+        "maps": 195,
+        "objects": 168877,
+        "aim_hit_rate": 0.8439100647216613,
+        "mean_distance_px": 11.485509923679798,
+        "median_distance_px": 10.228888563840492,
+        "spinner_rpm": 377.3734720480068,
+        "spinner_minutes": 6.685594444444445
+      },
+      "replayrnn": {
+        "maps": 195,
+        "objects": 168877,
+        "aim_hit_rate": 0.9406195041361465,
+        "mean_distance_px": 8.709294507756772,
+        "median_distance_px": 7.715805852875649,
+        "spinner_rpm": 3.3621967020865173,
+        "spinner_minutes": 6.685594444444445
+      },
+      "replayvae": {
+        "maps": 195,
+        "objects": 168877,
+        "aim_hit_rate": 0.12809914908483688,
+        "mean_distance_px": 46.74121075389575,
+        "median_distance_px": 39.46106206872835,
+        "spinner_rpm": 44.07793716941677,
+        "spinner_minutes": 6.685594444444445
+      },
+      "replaywgan": {
+        "maps": 195,
+        "objects": 168877,
+        "aim_hit_rate": 0.263641585295807,
+        "mean_distance_px": 32.711392388289696,
+        "median_distance_px": 26.772220754281634,
+        "spinner_rpm": 33.54265495661307,
+        "spinner_minutes": 6.685594444444445
+      }
+    }
+  }
+}

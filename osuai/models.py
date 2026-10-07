@@ -126,6 +126,19 @@ class KeyLSTM(nn.Module):
         return self.out(F.relu(self.hidden(h)))
 
 
+class CursorLSTM(nn.Module):
+    """Baseline: a deterministic regressor from map features to the cursor position."""
+
+    def __init__(self, hidden: int = 128, layers: int = 2):
+        super().__init__()
+        self.lstm = nn.LSTM(N_INPUT, hidden, num_layers=layers, batch_first=True, dropout=0.2)
+        self.head = nn.Sequential(nn.Linear(hidden, 128), nn.ReLU(), nn.Linear(128, 64), nn.ReLU(), nn.Linear(64, 2))
+
+    def forward(self, features):
+        h, _ = self.lstm(features)
+        return self.head(h)
+
+
 def default_device() -> torch.device:
     return torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
@@ -198,3 +211,37 @@ class KeyModel:
         model = cls(**ckpt["config"], device=device)
         model.net.load_state_dict(ckpt["net"])
         return model
+
+
+class CursorLSTMModel:
+    """The LSTM baseline. It has no noise input, so every play of a map is the same."""
+
+    kind = "cursor_lstm"
+
+    def __init__(self, hidden=128, layers=2, device=None):
+        self.device = device or default_device()
+        self.config = {"hidden": hidden, "layers": layers}
+        self.net = CursorLSTM(hidden, layers).to(self.device)
+
+    @torch.no_grad()
+    def generate(self, features: np.ndarray, seed: int | None = None) -> np.ndarray:
+        self.net.eval()
+        return self.net(torch.as_tensor(features, dtype=torch.float32, device=self.device)).cpu().numpy()
+
+    def save(self, path: str):
+        torch.save({"kind": self.kind, "config": self.config, "net": self.net.state_dict()}, path)
+
+    @classmethod
+    def load(cls, path: str, device=None) -> "CursorLSTMModel":
+        ckpt = torch.load(path, map_location="cpu", weights_only=True)
+        if ckpt.get("kind") != cls.kind:
+            raise ValueError(f"{path} is not a {cls.kind} checkpoint")
+        model = cls(**ckpt["config"], device=device)
+        model.net.load_state_dict(ckpt["net"])
+        return model
+
+
+def load_cursor(path: str, device=None):
+    """A cursor model of either kind."""
+    kind = torch.load(path, map_location="cpu", weights_only=True).get("kind")
+    return {m.kind: m for m in (CursorModel, CursorLSTMModel)}[kind].load(path, device)

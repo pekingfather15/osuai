@@ -2,6 +2,7 @@
 
     python -m osuai.train cursor --data v3 --out models/v4 --epochs 90 --pretrain 60
     python -m osuai.train keys --data v3 --out models/v4 --epochs 30
+    python -m osuai.train lstm --data v3 --out models/v4 --epochs 6     # baseline
 
 The cursor model is trained in two phases:
   1. pretraining: the generator alone, on the position error, at a high learning rate.
@@ -26,7 +27,7 @@ from torch.utils.data import DataLoader, TensorDataset
 
 from . import paths
 from .features import INPUT_FEATURES
-from .models import CursorModel, KeyModel, SPINNER_FEATURE
+from .models import CursorLSTMModel, CursorModel, KeyModel, SPINNER_FEATURE
 
 UNTIL_CLICK = INPUT_FEATURES.index("time_until_click")
 PADDING_UNTIL_CLICK = 9999.0
@@ -157,6 +158,31 @@ def evaluate_positions(g, loader, noise_dim, dev) -> float:
     return total / max(n, 1)
 
 
+# ---------------- LSTM baseline ----------------
+
+def train_lstm(args):
+    """The deterministic baseline: an LSTM regressor trained on the position error alone."""
+    xs, ys = load_dataset(args.data)
+    train, held = loaders(xs, ys[..., :2], args.batch)
+    model = CursorLSTMModel()
+    net, dev = model.net, model.device
+    opt = torch.optim.AdamW(net.parameters(), lr=args.lr_lstm, weight_decay=0.001)
+    os.makedirs(args.out, exist_ok=True)
+    for epoch in range(args.epochs):
+        net.train()
+        total = 0.0
+        for x, y, mask in train:
+            x, y, mask = x.to(dev), y.to(dev), mask.to(dev)
+            loss = F.smooth_l1_loss(net(x)[mask], y[mask])
+            opt.zero_grad()
+            loss.backward()
+            torch.nn.utils.clip_grad_norm_(net.parameters(), 1.0)
+            opt.step()
+            total += float(loss)
+        print(f"epoch {epoch}: loss {total / len(train):.5f}")
+    model.save(os.path.join(args.out, "cursor_lstm.pt"))
+
+
 # ---------------- keys ----------------
 
 def main_key_first(keys: torch.Tensor) -> torch.Tensor:
@@ -201,7 +227,7 @@ def train_keys(args):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("what", choices=["cursor", "keys"])
+    ap.add_argument("what", choices=["cursor", "lstm", "keys"])
     ap.add_argument("--data", required=True, help="dataset name under datasets/")
     ap.add_argument("--out", required=True)
     ap.add_argument("--epochs", type=int, default=90)
@@ -210,13 +236,14 @@ def main():
     ap.add_argument("--lr-pretrain", type=float, default=1e-3)
     ap.add_argument("--lr", type=float, default=1e-4, help="cursor: adversarial learning rate")
     ap.add_argument("--lr-keys", type=float, default=0.01)
+    ap.add_argument("--lr-lstm", type=float, default=0.008)
     ap.add_argument("--critic-steps", type=int, default=3)
     ap.add_argument("--gp", type=float, default=8.0, help="gradient penalty weight")
     ap.add_argument("--adv-max", type=float, default=2e-4, help="largest adversarial loss weight")
     ap.add_argument("--spin", type=float, default=0.02, help="spin loss weight")
     ap.add_argument("--save-every", type=int, default=5)
     args = ap.parse_args()
-    (train_cursor if args.what == "cursor" else train_keys)(args)
+    {"cursor": train_cursor, "lstm": train_lstm, "keys": train_keys}[args.what](args)
 
 
 if __name__ == "__main__":
